@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-colour: #2c2c2c;
+  --header-colour: #333;
+  --header-text-colour: #cacaca;
+  --text-colour: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-colour);
+}
+
+header {
+  background-color: var(--header-colour);
+  text-align: center;
+  min-width: fit-content;
+  min-height: fit-content;
+  width: calc(100% - 35%);
+  height: 50px;
+  margin-bottom: 20px;
+  box-shadow: -10px 0 10px var(--header-colour),
+    0 10px 10px var(--header-colour), 10px 0 10px var(--header-colour);
+}
+
+header h1 {
+  color: var(--header-text-colour);
+  padding: 10px 0;
+  font-size: 2.4rem;
+}
+
+.main-content {
+  display: flex;
+  min-width: fit-content;
+  width: calc(100% - 35%);
+  min-height: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+table.main-table {
+  margin: 0 auto;
+  width: 100%;
+  table-layout: auto;
+  background-color: var(--header-colour);
+  border: 2px solid var(--header-colour);
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #444;
+  text-align: center;
+  border-bottom: 5px solid var(--background-colour);
+  color: var(--text-colour);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+tbody {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  transition: 200ms ease;
+  color: var(--text-colour);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66a6a6;
+  transition: 200ms ease;
+}
+
+td.bit {
+  border-right: 5px solid var(--background-colour);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--header-colour);
+  box-shadow: 0 -10px 10px var(--header-colour);
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  height: fit-content;
+}
+
+.copyright {
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ccc;
+}

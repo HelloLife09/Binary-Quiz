@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  background-color: #292929;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  z-index: 100;
+  display: flex;
+  padding: 10px;
+}
+
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-original {
+  position: relative;
+  padding: 20px;
+  background-color: #444444;
+  width: calc(100% + 4rem);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 100px;
+  bottom: calc(10vh - 20px);
+}
+
+.number-original span {
+  font-size: 2.8rem;
+  color: #cccccc;
+  text-wrap: nowrap;
+}
+
+.number-final {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: calc(100% + 10rem);
+  background-color: #333333;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.display-num-final {
+  width: 100%;
+  height: 40px;
+  gap: 4%;
+  display: flex;
+}
+
+#number-display {
+  width: 55%;
+  height: 40px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+.display-gap {
+  position: relative;
+  color: #fff;
+  font-size: 3rem;
+  transform: translateY(-60%);
+  margin-left: 0.5%;
+}
+
+button[type="submit"] {
+  width: 40%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #22aa22;
+  height: 40px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #222222;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary To Decimal (5-bits)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background" style="z-index: 1"></div>
+    <main>
+      <div class="main-content">
+        <div class="number-original">
+          <span id="original-bin">01001</span>
+        </div>
+        <div class="number-final">
+          <div class="display-num-final">
+            <input type="number" readonly id="number-display" />
+            <span class="display-gap">.</span>
+            <button type="submit" id="number-submit-btn">Submit</button>
+          </div>
+          <div class="number-grid">
+            <button type="button" id="1">1</button>
+            <button type="button" id="2">2</button>
+            <button type="button" id="3">3</button>
+            <button type="button" id="4">4</button>
+            <button type="button" id="5">5</button>
+            <button type="button" id="6">6</button>
+            <button type="button" id="7">7</button>
+            <button type="button" id="8">8</button>
+            <button type="button" id="9">9</button>
+            <button
+              type="button"
+              id="spacing"
+              class="spacing-grid"
+              disabled
+              aria-disabled="true"
+              aria-hidden="true"
+            ></button>
+            <button type="button" id="0">0</button>
+            <button type="button" id="back">
+              <span class="backspace">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0.1 0 5.9 4"
+                  width="20"
+                  height="20"
+                  class="backspace-button-svg"
+                >
+                  <path
+                    d="M 2.4 0 h 3 c 0.4 0 0.6 0.2 0.6 0.6 V 3.4 c 0 0.4 -0.2 0.6 -0.6 0.6 h -3 Q 2 4 1.6 3.6 L 0.2 2.2 Q -0 2 0.2 1.8 L 1.6 0.4 Q 2 0 2.4 0 V 0.2 q -0.3 0 -0.6 0.3 L 0.5 1.8 q -0.2 0.2 0 0.4 L 1.8 3.5 q 0.3 0.3 0.6 0.3 h 3 c 0.3 0 0.4 -0.1 0.4 -0.4 V 0.6 c 0 -0.3 -0.1 -0.4 -0.4 -0.4 h -3 m 1.1 1 l 0.5 0.5 l 0.5 -0.5 c 0.1 -0.1 0.22 -0.1 0.3 0 s 0.1 0.2 0 0.3 L 4.3 2 l 0.5 0.5 c 0.1 0.1 0.1 0.2 0 0.3 s -0.2 0.1 -0.3 0 L 4 2.3 l -0.5 0.5 c -0.1 0.1 -0.2 0.1 -0.3 0 s -0.1 -0.2 0 -0.3 L 3.7 2 l -0.5 -0.5 c -0.1 -0.1 -0.1 -0.2 0 -0.3 s 0.2 -0.1 0.3 0"
+                    stroke="#000000"
+                    stroke-width="0.3"
+                    fill="#000000"
+                  />
+                </svg>
+              </span>
+              <style>
+                svg.backspace-button-svg {
+                  transform-origin: center;
+                }
+              </style>
+            </button>
+            <style>
+              button[type="button"]:not(.spacing-grid) {
+                cursor: pointer;
+              }
+              .spacing-grid {
+                cursor: default;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
