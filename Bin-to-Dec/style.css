@@ -97,3 +97,40 @@ button[type="submit"] {
   font-size: 1.3rem;
   color: #222222;
 }
+
+.number-grid-content {
+  background-color: #373737;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.number-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(4, 40px);
+  gap: 4px;
+}
+
+button[type="button"] {
+  border: none;
+  outline: none;
+  border-radius: 20%;
+  background-color: #eee;
+  color: #111;
+  font-size: 1.6rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button#zero,
+button#back {
+  transform: translateX(50%);
+}
+
+.backspace-button-svg {
+  position: relative;
+  transform: translate(0%, 10%);
+  transform-origin: center;
+}
