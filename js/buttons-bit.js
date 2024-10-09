@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const BinDisplay = document.getElementById("original-bin");
   const NumDisplay = document.getElementById("number-display");
-  const SubmitBtn = document.getElementById("number-submit-button");
+  const SubmitBtn = document.getElementById("number-submit-btn");
   const BtnZero = document.getElementById("zero");
   const BtnOne = document.getElementById("one");
   const BtnTwo = document.getElementById("two");
@@ -26,21 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
   const BtnBack = document.getElementById("back");
 
-  function Submit() {
-    DisplayText = NumDisplay.textContent.trim();
+  SubmitBtn.addEventListener("click", () => {
+    DisplayText = NumDisplay.value.trim();
     if (BinToDec(BinDisplay.textContent) === DisplayText) {
-      BinDisplay.classList.toggle(".correct");
-      NumDisplay.classList.toggle(".correct");
+      BinDisplay.classList.add(".correct");
+      NumDisplay.classList.add(".correct");
     }
-  }
+  });
 
   NumBtns.forEach((NumBtn) => {
     NumBtn.addEventListener("click", () => {
-      NumDisplay.textContent += NumBtn.innerText.trim();
+      NumDisplay.value += NumBtn.innerText.trim();
     });
   });
 
   BtnBack.addEventListener("click", () => {
-    NumDisplay.textContent -= 1;
+    NumDisplay.value = NumDisplay.value.slice(0, -1);
   });
 });

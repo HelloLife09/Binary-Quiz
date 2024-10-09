@@ -3,6 +3,7 @@ function BinToDec(BinNum) {
   for (const digit in BinNum) {
     dec = dec * 2 + parseInt(digit);
   }
+
   return toString(dec);
 }
 
