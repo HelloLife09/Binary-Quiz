@@ -53,6 +53,11 @@ main {
   cursor: default;
 }
 
+.number-original span.correct {
+  color: #13941e;
+  transition: 200ms ease-in-out;
+}
+
 .number-final {
   position: relative;
   display: flex;
@@ -79,6 +84,11 @@ main {
   outline: #333 1px solid;
   border: none;
   background-color: #ccc;
+  transition: 200ms ease-in-out;
+}
+
+#number-display.correct {
+  color: #13941e;
   transition: 200ms ease-in-out;
 }
 
