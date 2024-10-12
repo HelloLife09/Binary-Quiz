@@ -27,10 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const BtnBack = document.getElementById("back");
 
   SubmitBtn.addEventListener("click", () => {
-    DisplayText = NumDisplay.value.trim();
-    if (BinToDec(BinDisplay.textContent) === DisplayText) {
-      BinDisplay.classList.add(".correct");
-      NumDisplay.classList.add(".correct");
+    const DisplayText = NumDisplay.value.trim();
+    const OriginalBin = BinToDec(BinDisplay.textContent.toString());
+    console.log(`DisplayText: "${DisplayText}"`);
+    console.log(`OriginalBin: "${OriginalBin}", DisplayText: "${DisplayText}"`);
+    if (OriginalBin === DisplayText) {
+      BinDisplay.classList.add("correct");
+      NumDisplay.classList.add("correct");
     }
   });
 

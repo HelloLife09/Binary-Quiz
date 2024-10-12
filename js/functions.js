@@ -1,14 +1,13 @@
 function BinToDec(BinNum) {
   let dec = 0;
-  for (const digit in BinNum) {
-    dec = dec * 2 + parseInt(digit);
+  for (const digit of BinNum) {
+    dec = dec * 2 + parseInt(digit, 10);
   }
-
-  return toString(dec);
+  return dec.toString();
 }
 
 function DecToBin(DecNum, bits = 0) {
-  if (DecNum) {
+  if (!DecNum) {
     return "0".padStart(bits, "0");
   }
 
