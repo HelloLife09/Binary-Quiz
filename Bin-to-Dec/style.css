@@ -51,11 +51,17 @@ main {
   color: #cccccc;
   text-wrap: nowrap;
   cursor: default;
+  transition: 300ms ease-in-out;
 }
 
-.number-original span.correct {
-  color: #13941e;
-  transition: 200ms ease-in-out;
+#original-bin.correct {
+  color: #15951e;
+  transition: 300ms ease-in-out;
+}
+
+#original-bin.incorrect {
+  color: #d80e0e;
+  transition: 300ms ease-in-out;
 }
 
 .number-final {
@@ -84,12 +90,17 @@ main {
   outline: #333 1px solid;
   border: none;
   background-color: #ccc;
-  transition: 200ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 #number-display.correct {
-  color: #13941e;
-  transition: 200ms ease-in-out;
+  color: #15951e;
+  transition: 300ms ease-in-out;
+}
+
+#number-display.incorrect {
+  color: #d80e0e;
+  transition: 300ms ease-in-out;
 }
 
 #number-display:hover {

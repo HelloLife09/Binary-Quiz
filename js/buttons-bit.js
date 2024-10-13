@@ -34,6 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (OriginalBin === DisplayText) {
       BinDisplay.classList.add("correct");
       NumDisplay.classList.add("correct");
+    } else {
+      BinDisplay.classList.add("incorrect");
+      NumDisplay.classList.add("incorrect");
+      setTimeout(() => {
+        BinDisplay.classList.remove("incorrect");
+        NumDisplay.classList.remove("incorrect");
+      }, 1000);
     }
   });
 
