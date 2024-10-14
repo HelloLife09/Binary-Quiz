@@ -54,16 +54,6 @@ main {
   transition: 300ms ease-in-out;
 }
 
-#original-bin.correct {
-  color: #15951e;
-  transition: 300ms ease-in-out;
-}
-
-#original-bin.incorrect {
-  color: #d80e0e;
-  transition: 300ms ease-in-out;
-}
-
 .number-final {
   position: relative;
   display: flex;
@@ -73,41 +63,6 @@ main {
   background-color: #333333;
   padding: 40px;
   border-radius: 40px;
-}
-
-.display-num-final {
-  width: 100%;
-  height: 40px;
-  gap: 4%;
-  display: flex;
-}
-
-#number-display {
-  width: 55%;
-  height: 40px;
-  border-radius: 15px;
-  cursor: default;
-  outline: #333 1px solid;
-  border: none;
-  background-color: #ccc;
-  transition: 300ms ease-in-out;
-}
-
-#number-display.correct {
-  color: #15951e;
-  transition: 300ms ease-in-out;
-}
-
-#number-display.incorrect {
-  color: #d80e0e;
-  transition: 300ms ease-in-out;
-}
-
-#number-display:hover {
-  background-color: #eee;
-  box-shadow: 5px 5px 10px #444 inset, -6px -6px 10px #fff inset;
-  transition: 200ms ease-in-out;
-  outline: #333 10px solid;
 }
 
 .display-gap {
@@ -144,14 +99,6 @@ button[type="submit"]:hover {
   border-radius: 50px;
 }
 
-.number-grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 40px);
-  grid-template-rows: repeat(4, 40px);
-  gap: 4px;
-}
-
 button[type="button"] {
   border: none;
   outline: none;
@@ -168,11 +115,6 @@ button[type="button"] {
 button[type="button"]:hover {
   box-shadow: -2px -2px 2px #222 inset, 2px 2px 2px #fff inset;
   transition: 200ms ease-in-out;
-}
-
-button#zero,
-button#back {
-  transform: translateX(50%);
 }
 
 .backspace-button-svg {
