@@ -13,8 +13,6 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/bin-to-dec.css" />
-    <script src="../js/buttons-bit.js"></script>
-    <script src="../js/functions.js"></script>
   </head>
   <body>
     <div class="background" style="z-index: 1"></div>
@@ -25,7 +23,12 @@
         </div>
         <div class="number-final">
           <div class="display-num-final">
-            <input type="number" readonly id="number-display" />
+            <input
+              type="number"
+              readonly
+              class="input-display"
+              id="number-display"
+            />
             <span class="display-gap">.</span>
             <button type="submit" id="number-submit-btn">Submit</button>
           </div>
@@ -63,5 +66,7 @@
         </div>
       </div>
     </main>
+    <script src="../js/buttons-bit.js"></script>
+    <script src="../js/functions.js"></script>
   </body>
 </html>

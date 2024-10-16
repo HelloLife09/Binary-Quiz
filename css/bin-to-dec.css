@@ -15,34 +15,6 @@
   display: flex;
 }
 
-#number-display {
-  width: 55%;
-  height: 40px;
-  border-radius: 15px;
-  cursor: default;
-  outline: #333 1px solid;
-  border: none;
-  background-color: #ccc;
-  transition: 300ms ease-in-out;
-}
-
-#number-display.correct {
-  color: #15951e;
-  transition: 300ms ease-in-out;
-}
-
-#number-display.incorrect {
-  color: #d80e0e;
-  transition: 300ms ease-in-out;
-}
-
-#number-display:hover {
-  background-color: #eee;
-  box-shadow: 5px 5px 10px #444 inset, -6px -6px 10px #fff inset;
-  transition: 200ms ease-in-out;
-  outline: #333 10px solid;
-}
-
 .number-grid {
   display: grid;
   justify-content: center;

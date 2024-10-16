@@ -13,7 +13,6 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/dec-to-bin.css" />
-    <script src="../js/functions.js"></script>
   </head>
   <body>
     <div class="background" style="z-index: 1"></div>
@@ -24,7 +23,12 @@
         </div>
         <div class="number-final">
           <div class="display-bin-final">
-            <input type="number" readonly id="binary-display" />
+            <input
+              type="number"
+              class="input-display"
+              readonly
+              id="binary-display"
+            />
             <span class="display-gap">.</span>
             <button type="submit" id="binary-submit-btn">Submit</button>
           </div>
@@ -54,5 +58,6 @@
         </div>
       </div>
     </main>
+    <script src="../js/functions.js"></script>
   </body>
 </html>
