@@ -25,6 +25,10 @@ const NumBtns = [
 ];
 const BtnBack = document.getElementById("back");
 
+const TotalQuestions = 1;
+const CorrectAnswers = 0;
+const IncorrectGuesses = 0;
+
 window.onload = GenerateNewNumber();
 
 function SubmitButton() {
@@ -33,10 +37,13 @@ function SubmitButton() {
   if (OriginalBin === DisplayText) {
     BinDisplay.classList.add("correct");
     NumDisplay.classList.add("correct");
+    CorrectAnswers++;
     setTimeout(GenerateNewNumber, 1500);
+    TotalQuestions++;
   } else {
     BinDisplay.classList.add("incorrect");
     NumDisplay.classList.add("incorrect");
+    IncorrectGuesses++;
     setTimeout(() => {
       BinDisplay.classList.remove("incorrect");
       NumDisplay.classList.remove("incorrect");
