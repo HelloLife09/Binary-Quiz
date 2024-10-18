@@ -25,12 +25,15 @@ const NumBtns = [
 ];
 const BtnBack = document.getElementById("back");
 
+window.onload = GenerateNewNumber();
+
 function SubmitButton() {
   const DisplayText = NumDisplay.value.trim();
   const OriginalBin = BinToDec(BinDisplay.textContent);
   if (OriginalBin === DisplayText) {
     BinDisplay.classList.add("correct");
     NumDisplay.classList.add("correct");
+    setTimeout(GenerateNewNumber, 1500);
   } else {
     BinDisplay.classList.add("incorrect");
     NumDisplay.classList.add("incorrect");
