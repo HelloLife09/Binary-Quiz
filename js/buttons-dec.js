@@ -5,12 +5,15 @@ const BtnZero = document.getElementById("zero");
 const BtnOne = document.getElementById("one");
 const BtnBack = document.getElementById("back");
 
+window.onload = GenerateNewNumber();
+
 function SubmitButton() {
   const DisplayText = BinDisplay.value.trim();
   const OriginalNum = DecToBin(NumDisplay.textContent, 5);
   if (OriginalNum === DisplayText) {
     BinDisplay.classList.add("correct");
     NumDisplay.classList.add("correct");
+    setTimeout(GenerateNewNumber, 1500);
   } else {
     BinDisplay.classList.add("incorrect");
     NumDisplay.classList.add("incorrect");

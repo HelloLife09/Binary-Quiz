@@ -29,11 +29,7 @@ function GenerateRandomBin(bits) {
   return bin;
 }
 
-function GenerateRandomNum(digits) {
-  let num = "";
-  for (let i = 0; i < digits; i++) {
-    num += Math.floor(Math.random() * 10);
-  }
-  num = parseInt(num); // Remove leading zeros if any
+function GenerateRandomNum(MaxNumber) {
+  let num = Math.floor(Math.random() * MaxNumber + 1);
   return num.toString();
 }
