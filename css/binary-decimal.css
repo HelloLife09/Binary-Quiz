@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100..900&display=swap");
 
 *,
 *::before,
@@ -112,6 +113,8 @@ button[type="submit"] {
   border-radius: 20px;
   border: none;
   outline: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
   background-color: #22aa22;
   height: 40px;
   font-weight: 800;
@@ -154,4 +157,40 @@ button[type="button"]:hover {
   position: relative;
   transform: translate(0%, 10%);
   transform-origin: center;
+}
+
+.finish-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.finish-link {
+  background-color: #ccc;
+  height: 60%;
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+
+.finish-link:hover {
+  box-shadow: -2px -2px 2px #222 inset, 2px 2px 2px #fff inset;
+  transition: 200ms ease-in-out;
+}
+
+.finish-link span {
+  font-size: 1.5rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }

@@ -19,7 +19,7 @@
     <main>
       <div class="main-content">
         <div class="number-original">
-          <span id="original-bin">01010101</span>
+          <span id="original-bin"></span>
         </div>
         <div class="number-final">
           <div class="display-num-final">
@@ -70,9 +70,17 @@
             </div>
           </div>
         </div>
+        <div class="finish-content">
+          <a class="finish-link" id="finish-link">
+            <span>Finish</span>
+          </a>
+        </div>
       </div>
     </main>
-    <script src="../js/buttons-bit.js"></script>
+    <!-- For number of bits -- so dont need one number-gen file for each html file -->
+    <div style="display: none" id="digits-num">8</div>
     <script src="../js/functions.js"></script>
+    <script src="../js/number-gen-bin.js"></script>
+    <script src="../js/buttons-bit.js"></script>
   </body>
 </html>

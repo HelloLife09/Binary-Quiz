@@ -13,13 +13,18 @@
     />
     <link rel="stylesheet" href="../css/binary-decimal.css" />
     <link rel="stylesheet" href="../css/dec-to-bin.css" />
+    <style>
+      #max-num {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="background" style="z-index: 1"></div>
     <main>
       <div class="main-content">
         <div class="number-original">
-          <span id="original-num">255</span>
+          <span id="original-num"></span>
         </div>
         <div class="number-final">
           <div class="display-bin-final">
@@ -62,9 +67,17 @@
             </div>
           </div>
         </div>
+        <div class="finish-content">
+          <a class="finish-link" id="finish-link">
+            <span>Finish</span>
+          </a>
+        </div>
       </div>
     </main>
-    <script src="../js/buttons-dec.js"></script>
+    <!-- For Max Number (so dont need a file for every html file) -->
+    <div id="max-num">255</div>
     <script src="../js/functions.js"></script>
+    <script src="../js/number-gen-dec.js"></script>
+    <script src="../js/buttons-dec.js"></script>
   </body>
 </html>
