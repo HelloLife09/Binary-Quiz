@@ -4,6 +4,8 @@ const SubmitBtn = document.getElementById("binary-submit-btn");
 const BtnZero = document.getElementById("zero");
 const BtnOne = document.getElementById("one");
 const BtnBack = document.getElementById("back");
+const BitNum = document.getElementById("bit-num");
+console.log(BitNum.textContent);
 
 let TotalQuestions = 1;
 let CorrectAnswers = 0;
@@ -13,7 +15,9 @@ window.onload = GenerateNewNumber();
 
 function SubmitButton() {
   const DisplayText = BinDisplay.value.trim();
-  const OriginalNum = DecToBin(NumDisplay.textContent, 5);
+  const OriginalNum = DecToBin(NumDisplay.textContent, BitNum.innerText);
+  console.log(`DisplayText: ${DisplayText}`);
+  console.log(`OriginalNum: ${OriginalNum}`);
   if (OriginalNum === DisplayText) {
     BinDisplay.classList.add("correct");
     NumDisplay.classList.add("correct");

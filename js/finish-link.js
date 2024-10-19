@@ -1,13 +1,12 @@
 const FinishLink = document.getElementById("finish-link-btn");
-const PrevPage = window.document.title;
-PrevPage = PrevPage.slice(0, 20);
-PrevPage = PrevPage.slice(0, -1);
+let PrevPage = window.document.title;
+PrevPage = PrevPage.slice(19, -1);
+console.log(PrevPage);
 
-document.addEventListener("DOMContentLoaded", () => {
-  FinishLink.addEventListener("click", () => {
-    sessionStorage.setItem("CorrectAnswers", CorrectAnswers);
-    sessionStorage.setItem("IncorrectGuesses", IncorrectGuesses);
-    sessionStorage.setItem("TotalQuestions", TotalQuestions);
-    window.location.href = `../finish.html?PreviousPage=${PrevPage}`;
-  });
+FinishLink.addEventListener("click", () => {
+  sessionStorage.setItem("CorrectAnswers", CorrectAnswers);
+  sessionStorage.setItem("IncorrectGuesses", IncorrectGuesses);
+  sessionStorage.setItem("TotalQuestions", TotalQuestions);
+
+  window.location.href = `../finish.html?PreviousPage=${PrevPage}`;
 });
