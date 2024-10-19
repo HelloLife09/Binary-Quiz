@@ -5,9 +5,9 @@ const BtnZero = document.getElementById("zero");
 const BtnOne = document.getElementById("one");
 const BtnBack = document.getElementById("back");
 
-const TotalQuestions = 1;
-const CorrectAnswers = 0;
-const IncorrectGuesses = 0;
+let TotalQuestions = 1;
+let CorrectAnswers = 0;
+let IncorrectGuesses = 0;
 
 window.onload = GenerateNewNumber();
 
