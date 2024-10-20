@@ -14,15 +14,16 @@ const TotalQuestions = sessionStorage.getItem("TotalQuestions");
 CorrectNum.textContent = CorrectAnswers;
 IncorrectNum.textContent = IncorrectGuesses;
 QuestionsNum.textContent = TotalQuestions;
+console.log(PreviousPage);
 
-if (PreviousPage === "5-bit.html") {
-  PageSpan.textContent = "Bin to Dec (5 bits)";
-} else if (PreviousPage === "8-bit.html") {
-  PageSpan.textContent = "Bin to Dec (8 bits)";
-} else if (PreviousPage === "0-31-dec.html") {
-  PageSpan.textContent = "Dec to Bin (numbers 0-31)";
-} else if (PreviousPage === "0-255-dec.html") {
-  PageSpan.textContent = "Dec to Bin (numbers 0-255)";
+if (PreviousPage === "5-bits") {
+  PageSpan.textContent = "Binary to Decimal (5 bits)";
+} else if (PreviousPage === "8-bits") {
+  PageSpan.textContent = "Binary to Decimal (8 bits)";
+} else if (PreviousPage === "numbers 0-31") {
+  PageSpan.textContent = "Decimal to Binary (numbers 0-31)";
+} else if (PreviousPage === "numbers 0-255") {
+  PageSpan.textContent = "Decimal to Binary (numbers 0-255)";
 } else {
   Dash.style.display = "none";
 }
