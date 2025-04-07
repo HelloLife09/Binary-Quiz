@@ -67,8 +67,8 @@ thead {
   font-weight: 700;
 }
 
-thead.Bin-Dec {
-  border-right: 5px solid #444;
+td {
+  padding: 0 5px;
 }
 
 tbody {
